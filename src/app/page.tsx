@@ -53,39 +53,40 @@ const HomePage: React.FC = () => {
             <div className="p-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg text-center">
               <h3 className="text-3xl font-semibold mb-4">Instagram Ads</h3>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                Boost your brand's presence on Instagram with ads designed to engage and convert.
+                Boost your brand&apos;s presence on Instagram with ads designed to engage and convert.
               </p>
-            </div>
+            </div>      
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="bg-white dark:bg-gray-900 py-20">
-        <div className="container mx-auto text-center">
-          <h2 className="text-5xl font-bold mb-12 text-foreground">What Our Clients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-              <p className="text-lg italic mb-4">
-                "Boostify Media helped us grow our online presence and achieve better results than we ever imagined!"
-              </p>
-              <h4 className="font-bold">- Sarah Johnson, CEO of Tech Ventures</h4>
-            </div>
-            <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-              <p className="text-lg italic mb-4">
-                "Their team is creative, professional, and incredibly skilled at what they do. Highly recommend."
-              </p>
-              <h4 className="font-bold">- Michael Smith, Marketing Director at Digital Inc.</h4>
-            </div>
-            <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
-              <p className="text-lg italic mb-4">
-                "Our ROI has skyrocketed since we started working with Boostify. They truly know how to deliver results."
-              </p>
-              <h4 className="font-bold">- Emily Davis, Founder of eCommerce Co.</h4>
-            </div>
-          </div>
-        </div>
-      </section>
+     {/* Testimonials Section */}
+<section className="bg-white dark:bg-gray-900 py-20">
+  <div className="container mx-auto text-center">
+    <h2 className="text-5xl font-bold mb-12 text-foreground">What Our Clients Say</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+        <p className="text-lg italic mb-4">
+          "Boostify Media has been instrumental in helping our small business grow. Their strategies are top-notch!"
+        </p>
+        <h4 className="font-bold">- Rahul Verma, Founder of StartupX</h4>
+      </div>
+      <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+        <p className="text-lg italic mb-4">
+          "Their creative approach to social media ads helped us reach the right audience, and we’ve seen incredible results."
+        </p>
+        <h4 className="font-bold">- Neha Patil, CEO of Eco-Friendly Solutions</h4>
+      </div>
+      <div className="bg-gray-100 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+        <p className="text-lg italic mb-4">
+          "Our revenue has significantly increased since we partnered with Boostify Media. They know how to deliver!"
+        </p>
+        <h4 className="font-bold">- Arjun Sharma, Owner of Tradewell Industries</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Case Studies Section */}
       <section className="bg-gray-100 dark:bg-gray-800 py-20">

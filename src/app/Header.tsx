@@ -23,11 +23,10 @@ const Header: React.FC = () => {
     }
   };
 
-
   return (
     <header className="bg-gray-800 text-white py-4 relative">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl font-bold">
+        <h1 className="text-2xl md:text-4xl font-bold">
           <Link href="/">Boostify Media</Link>
         </h1>
 
@@ -55,28 +54,31 @@ const Header: React.FC = () => {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-6">
           <ul className="flex space-x-6">
-            <li>
+            <li className="text-base md:text-lg">
               <button onClick={() => handleNavigation("/")}>Home</button>
             </li>
-            <li>
+            <li className="text-base md:text-lg">
               <button onClick={() => handleNavigation("/contact-us")}>Contact Us</button>
             </li>
-            <li>
+            <li className="text-base md:text-lg">
               <button onClick={() => handleNavigation("/privacy-policy")}>
                 Privacy Policy
               </button>
             </li>
-            <li>
+            <li className="text-base md:text-lg">
               <button onClick={() => handleNavigation("/terms-conditions")}>
                 Terms & Conditions
               </button>
             </li>
-            <li>
+            <li className="text-base md:text-lg">
               <button onClick={() => handleNavigation("/refund-cancellation")}>
                 Refund & Cancellation
               </button>
             </li>
-            <li>
+            <li className="text-base md:text-lg">
+              <button onClick={() => handleNavigation("/about-us")}>About Us</button>
+            </li>
+            <li className="text-base md:text-lg">
               <button onClick={() => handleNavigation("/checkout")}>Checkout</button>
             </li>
           </ul>
@@ -88,38 +90,77 @@ const Header: React.FC = () => {
         <div className="loading-bar animate-pulse"></div>
       )}
 
-
       {/* Mobile Menu */}
       {isMenuOpen && (
         <nav className="lg:hidden bg-gray-700">
-          <ul className="flex flex-col space-y-4 p-4">
+          <ul className="flex flex-col space-y-4 p-4 text-base sm:text-lg">
             <li>
-              <button onClick={() => { handleNavigation("/"); setIsMenuOpen(false); }}>
+              <button
+                onClick={() => {
+                  handleNavigation("/");
+                  setIsMenuOpen(false);
+                }}
+              >
                 Home
               </button>
             </li>
             <li>
-              <button onClick={() => { handleNavigation("/contact-us"); setIsMenuOpen(false); }}>
+              <button
+                onClick={() => {
+                  handleNavigation("/contact-us");
+                  setIsMenuOpen(false);
+                }}
+              >
                 Contact Us
               </button>
             </li>
             <li>
-              <button onClick={() => { handleNavigation("/privacy-policy"); setIsMenuOpen(false); }}>
+              <button
+                onClick={() => {
+                  handleNavigation("/privacy-policy");
+                  setIsMenuOpen(false);
+                }}
+              >
                 Privacy Policy
               </button>
             </li>
             <li>
-              <button onClick={() => { handleNavigation("/terms-conditions"); setIsMenuOpen(false); }}>
+              <button
+                onClick={() => {
+                  handleNavigation("/terms-conditions");
+                  setIsMenuOpen(false);
+                }}
+              >
                 Terms & Conditions
               </button>
             </li>
             <li>
-              <button onClick={() => { handleNavigation("/refund-cancellation"); setIsMenuOpen(false); }}>
+              <button
+                onClick={() => {
+                  handleNavigation("/refund-cancellation");
+                  setIsMenuOpen(false);
+                }}
+              >
                 Refund & Cancellation
               </button>
             </li>
             <li>
-              <button onClick={() => { handleNavigation("/checkout"); setIsMenuOpen(false); }}>
+              <button
+                onClick={() => {
+                  handleNavigation("/about-us");
+                  setIsMenuOpen(false);
+                }}
+              >
+                About Us
+              </button>
+            </li>
+            <li>
+              <button
+                onClick={() => {
+                  handleNavigation("/checkout");
+                  setIsMenuOpen(false);
+                }}
+              >
                 Checkout
               </button>
             </li>
